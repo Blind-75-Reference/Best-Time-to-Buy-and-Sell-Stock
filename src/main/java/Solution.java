@@ -3,9 +3,10 @@ public class Solution {
         /*
         With this solution we are only going to pass through the array once, giving us a time complexity of O(n).
         We only care about two values as we go: the lowest price, and the highest profit. Our solution will always be
-        the greatest difference between any two elements in the array. As we pass through the array, we track the
-        lowest price, any time we find a lower price we use that price instead. If we didn't find a lower price,
-        we check the profit to be made. Any time we find greater profit, we update the value of maxProfit.
+        the greatest difference between the lowest price and the highest subsequent price. As we pass through the 
+        array, we track the lowest price, any time we find a lower price we use that price instead. If we didn't 
+        find a lower price, we check the profit to be made. Any time we find greater profit, we update the value of
+        maxProfit.
          */
 
         int lowPrice = 10000;
